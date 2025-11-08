@@ -11,7 +11,25 @@ export default function Home() {
         <Link to="/add" className="bg-green-600 text-white p-2 rounded">
           + Add Event
         </Link>
+
+
       </header>
+
+  {/* This is the "search for location" bar */}
+    <div className="p-4">
+      {/* Use flex to make the input and button side-by-side */}
+      <div className="flex">
+        <input 
+          type="text" 
+          placeholder="Search for a location..." 
+          className="w-full p-2 border-t border-b border-l rounded-l" 
+        />
+        <button className="bg-blue-500 text-white p-2 rounded-r">
+          Search
+        </button>
+      </div>
+    </div>
+ 
 
       <EventList />
       <MapView />
